@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Performance</title>
+    <style>
+        main{
+            font-family: monospace;
+            font-size: 11px;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+<select onchange="previewTest.call(this);"></select>
+<select>
+    <option value="100" selected>0.1</option>
+    <option value="500" selected>0.5</option>
+    <option value="1000" selected>1</option>
+    <option value="2000">2</option>
+    <option value="3000">3</option>
+    <option value="5000">5</option>
+    <option value="10000">10</option>
+    <option value="30000">30</option>
+    <option value="60000">60</option>
+</select>
+<input type="checkbox"> Shuffle&emsp;
+<button onclick="startTest();">Start</button>
+<button onclick="resetTest();">Reset</button>
+<br><br>
+<main></main>
+<script src="main.js"></script>
+<script src="style/set_style.js"></script>
+<script src="style/get_style.js"></script>
+<script src="style/set_color.js"></script>
+<script src="time/get_millis.js"></script>
+<script src="type/parse_number.js"></script>
+<script src="type/check_type.js"></script>
+<script src="type/has_value.js"></script>
+<script src="math/round.js"></script>
+<script src="string/split.js"></script>
+<script src="string/chunk.js"></script>
+<script src="object/access.js"></script>
+<script src="pattern/pattern.js"></script>
+<script src="pattern/scope.js"></script>
+<script src="array/loop.js"></script>
+</body>
+</html>
